@@ -1,10 +1,6 @@
-// Thêm WWW vào URL
-
-RewriteEngine On
-
-RewriteBase /
-
-RewriteCond %{HTTP_HOST} !^www.domain.com$ [NC]
-
-RewriteRule ^(.*)$ http://www.domain.com/$1 [L,R=301]
+Options +FollowSymLinks 
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} . 
+RewriteCond %{HTTP_HOST} !^mysite\.com 
+RewriteRule (.*) http://mysite.com/$1 [R=301,L]
 

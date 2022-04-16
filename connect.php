@@ -9,8 +9,8 @@
 <body>
 <?php
  $servername = 'localhost';
- $username ='root';
- $password='';
+ $username ='long';
+ $password='long';
  $database = 'toy';
   //Khai báo biến để kết nối đến CSDL
  $connect = mysqli_connect($servername, $username,$password,$database);
